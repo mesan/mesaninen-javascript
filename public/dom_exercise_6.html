@@ -4,30 +4,49 @@
         <div class="row exercise-description">
             <div class="col-lg-12">
                 <h1>DOM - Oppgave 6</h1>
-                <p>Skriv et program som konverterer mellom meter, centimeter, inches og yards</p>
+                <p>Skriv et program som konverterer mellom meter, centimeter, inches og yards. Resultatet skal skrives ut i <code>&#10094;span id="result-value"&#10095;</code></p>
+                <p>Javascript-koden kan fylles inn i filen dom-exercise-6.js som finnes i mappen public/dom/exercise6</p>
+                <h4>Formler:</h4>
+                <ul>
+                  <li>Meter til inches: <b>in = m * 39.370</b></li>
+                  <li>Meter til yards: <b>yd = m * 1.0936</b></li>
+                  <li>Centimeter til inches: <b>in = cm * 0.39370</b></li>
+                  <li>Centimeter til yards: <b>yd =cm * 0.010936</b></li>
+                </ul>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-12">
                 <form role="form">
-                  <div class="form-group">
-                    <label for="from-unit">Fra:</label>
-                    <input type="text" class="form-control" id="from-unit">
+                  <label for="from-unit-value">Fra:</label>
+                  <div class="form-group form-inline">
+                    <input type="text" class="form-control" id="from-unit-value">
+                    <select name="from-unit" id="from-unit" class="form-control unit-picker" >
+                        <option value="meters">Meter</option>
+                        <option value="centimeters">Centimeter</option>
+                        <option value="inches">Inches</option>
+                        <option value="yards">Yards</option>
+                    </select>
                   </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox"> Remember me</label>
-                  </div>
-                  <div class="form-group">
-                    <label for="to-unit">Til:</label>
-                    <input type="text" class="form-control" id="to-unit">
+                  <label for="to-unit">Til:</label>
+                  <div class="form-group form-inline">
+                    <select name="to-unit" id="to-unit" class="form-control unit-picker" >
+                        <option value="meters">Meter</option>
+                        <option value="centimeters">Centimeter</option>
+                        <option value="inches">Inches</option>
+                        <option value="yards">Yards</option>
+                    </select>
                   </div>
                   <button type="button" class="btn btn-default" id="converter-btn">Konverter</button>
                 </form>
             </div>
         </div>
         <div class="row">
-            <p>Resultat: <span id="result"></span></p>
+          <div class="col-lg-12" id="result-wrapper">
+            <p>Resultat: <span id="result-value"></span></p>
+          </div>
         </div>
     </div>
 </div>
+<script type="text/javascript" src="./dom_exercise_6.js"></script>
 <!-- /#page-content-wrapper -->
