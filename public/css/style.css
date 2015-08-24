@@ -51,6 +51,10 @@
     color: #999999;
 }
 
+.sidebar-nav li h3 {
+    color: #ccc;
+}
+
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;

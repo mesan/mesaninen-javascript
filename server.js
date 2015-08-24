@@ -33,6 +33,7 @@ require("./routes/api/movieImages")(app);
 require("./routes/index")(app);
 require("./routes/filmer")(app);
 require("./routes/domExercises")(app);
+require("./routes/jasmine")(app);
 
 console.log("Express server listening on port %d in %s mode", process.env.port || 3000, app.settings.env);
 
