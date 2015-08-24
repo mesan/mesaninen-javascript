@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title=pageTitle
+		link(rel='stylesheet', href='css/bootstrap.css')
+		link(rel='stylesheet', href='css/style.css')
+	body
+		div#sidebar-wrapper
+			ul.sidebar-nav
+				li.sidebar-brand
+					a(href="#") Mesaninen - Javascript
+				li(class=(menu === 'dom-exercise-1' ? 'selected' : ''))
+					a(href="/dom-exercise-1") DOM - Oppgave 1
+				li(class=(menu === 'dom-exercise-2' ? 'selected' : ''))
+					a(href="/dom-exercise-2") DOM - Oppgave 2
+				li(class=(menu === 'dom-exercise-3' ? 'selected' : ''))
+					a(href="/dom-exercise-3") DOM - Oppgave 3
+				li(class=(menu === 'dom-exercise-4' ? 'selected' : ''))
+					a(href="/dom-exercise-4") DOM - Oppgave 4
+				li(class=(menu === 'dom-exercise-5' ? 'selected' : ''))
+					a(href="/dom-exercise-5") DOM - Oppgave 5
+				li(class=(menu === 'dom-exercise-6' ? 'selected' : ''))
+					a(href="/dom-exercise-6") DOM - Oppgave 6
+		div#wrapper
+			block content
