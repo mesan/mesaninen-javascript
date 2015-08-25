@@ -28,10 +28,7 @@ app.configure('production', function(){
 });
 
 // Routes
-require("./routes/api/movies")(app);
-require("./routes/api/movieImages")(app);
 require("./routes/index")(app);
-require("./routes/filmer")(app);
 require("./routes/domExercises")(app);
 require("./routes/jasmine")(app);
 require("./routes/promise")(app);
