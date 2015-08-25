@@ -5,7 +5,7 @@ module.exports = function(app) {
     app.post('/message.json', messagePoster);
 };
 
-var message = { posted: new Date(), text: 'Hello!' };
+var message = { posted: new Date(), text: 'Første beskjed! Automatisk opprettet ved serveroppstart.' };
 
 function messageGetter(req, res) {
     res.json(message);

@@ -117,6 +117,10 @@
 	padding-bottom: 20px;
 }
 
+.exercise-container {
+    padding-bottom: 50px;
+}
+
 #result-wrapper {
 	padding-top: 30px;
 }
