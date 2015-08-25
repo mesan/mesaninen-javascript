@@ -1,13 +1,14 @@
 {
   "name": "Mesaninen_javaScript",
   "version": "1.1.0",
-  "author": "Lars Kristoffer Jørgensen",  
-  "main": "./server.js",    
-  "dependencies" : {
+  "author": "Lars Kristoffer Jørgensen",
+  "main": "./server.js",
+  "dependencies": {
     "express": "2.5.7",
-    "jade": ">= 0.0.1"
+    "jade": ">= 0.0.1",
+    "acorn": "~2.3.0"
   },
-  "noAnalyze": true,  
+  "noAnalyze": true,
   "engines": {
     "node": ">=0.6.14"
   }
