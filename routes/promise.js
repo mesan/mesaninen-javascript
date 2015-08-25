@@ -12,8 +12,8 @@ function messageGetter(req, res) {
 }
 
 function messagePoster(req, res) {
-    if (!req.body || !req.body.text) {
-        return res.status(400).json('Please provide a message!');
+    if (!req.body || !req.body.text || typeof req.body.text !== 'string') {
+        return res.status(400).json('Please provide a text property that is a string!');
     }
 
     message = {
