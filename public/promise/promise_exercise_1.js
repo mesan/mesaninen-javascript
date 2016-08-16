@@ -1,3 +1,6 @@
 // Numbers: 4815162342
+const numbersElement = document.getElementById('numbers');
+const promisedNumbers = 
+    new Promise(resolve => setTimeout(() => resolve(4815162342), 4000));
 
-// Skriv koden din her!
+promisedNumbers.then(numbers => numbersElement.innerHTML = numbers);
