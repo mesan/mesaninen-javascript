@@ -1,0 +1,49 @@
+Oppgave 1:
+---------------------------------------------------------------------------------
+Alternativ 1:
+document.querySelector('#top-movies-header').textContent = 'Tidenens beste filmer (imdb)';
+
+Alternativ 2:
+document.getElementById('top-movies-header').textContent = 'Tidenens beste filmer (imdb)';
+
+
+Oppgave 2:
+---------------------------------------------------------------------------------
+// Create elements
+let pulpFiction = document.createElement('li');
+pulpFiction.textContent = 'Pulp Fiction';
+
+let inception = document.createElement('li');
+inception.textContent = 'Inception';
+
+let fightClub = document.createElement('li');
+fightClub.textContent = 'Schindler\'s List';
+
+// Add to list
+let movieList = document.querySelector('ul.top-movies');
+
+movieList.insertBefore(pulpFiction, movieList.childNodes[0]);
+movieList.appendChild(inception);
+movieList.appendChild(fightClub);
+
+// Remove from list
+movieList.removeChild(document.querySelector('ul.top-movies li:nth-child(6)'));
+
+
+
+Oppgave 3:
+---------------------------------------------------------------------------------
+document.querySelectorAll('.top-movies li:nth-child(even)').forEach(function(li) {
+  li.style.background = '#ccc';
+});
+
+
+Oppgave 4:
+---------------------------------------------------------------------------------
+let movies = document.querySelector("ul.top-movies").getElementsByTagName('li');
+
+Array.prototype.forEach.call(movies, function (li) {
+  if (li.textContent.indexOf('The Godfather') > -1) {
+    li.classList.add('highlight');
+  }
+});
